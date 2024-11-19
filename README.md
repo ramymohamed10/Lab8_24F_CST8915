@@ -289,3 +289,34 @@ Explanation: The db.orders.find() command fetches and displays all documents (re
 - Connect to the MongoDB shell in the Kubernetes pod.
 - Explore the databases and collections used by the application.
 - Query the orders collection to examine the data structure and stored records.
+
+## Lab Tasks: Build, Push, and Deploy Your Own Docker Images
+
+You are asked to fork the necessary service repositories, build Docker images for each service, push them to your own Docker Hub account, and update the Kubernetes configuration file to use your images.
+
+---
+
+### **Step 1: Fork the Repositories**
+
+1. **Fork Each Repository**:
+   - Visit the GitHub repositories for the services listed below and fork them into your own GitHub account:
+   
+   | Service            | Description                                | Github Repo                                                                 |
+   |--------------------|--------------------------------------------|-----------------------------------------------------------------------------|
+   | `store-front`      | Web app for customers to place orders      | [store-front-L8](https://github.com/ramymohamed10/store-front-L8)           |
+   | `store-admin`      | Web app for store employees                | [store-admin-L8](https://github.com/ramymohamed10/store-admin-L8)           |
+   | `order-service`    | Handles order placement                    | [order-service-L8](https://github.com/ramymohamed10/order-service-L8)       |
+   | `product-service`  | Handles CRUD operations on products        | [product-service-L8](https://github.com/ramymohamed10/product-service-L8)   |
+   | `makeline-service` | Processes and completes orders             | [makeline-service-L8](https://github.com/ramymohamed10/makeline-service-L8) |
+   | `ai-service`       | AI-based product descriptions and images   | [ai-service-L8](https://github.com/ramymohamed10/ai-service-L8)             |
+   | `virtual-customer` | Simulates customer order creation          | [virtual-customer-L8](https://github.com/ramymohamed10/virtual-customer-L8) |
+   | `virtual-worker`   | Simulates order completion                 | [virtual-worker-L8](https://github.com/ramymohamed10/virtual-worker-L8)     |
+
+2. **Clone the Forked Repositories**:
+---
+### **Step 2: Build and Push Docker Images**
+---
+### **Step 3: Update `aps-all-in-one.yaml`**
+---
+### **Step 4: Test the Application**
+
